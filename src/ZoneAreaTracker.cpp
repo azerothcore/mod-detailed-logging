@@ -15,7 +15,7 @@ public:
   bool loggingEnabled = sConfigMgr->GetBoolDefault("ZoneAreaDetailedLogging.enabled", true);
   int logDumpSize = sConfigMgr->GetIntDefault("ZoneAreaDetailedLogging.dumpSize", 0);
 
-  ZoneAreaTracker() : PlayerScript("ZoneAreaTracker") { 
+  ZoneAreaTracker() : PlayerScript("ZoneAreaTracker") {
 
     // If the file doesn't exist we will create it and add the appropriate headers
 
@@ -53,7 +53,7 @@ public:
     }
   }
 
-  void OnUpdateArea(Player *player, uint32 oldArea, uint32 newArea) override{
+  void OnUpdateArea(Player *player, uint32 /* oldArea */, uint32 newArea) override{
 
     if (loggingEnabled){
       stringstream areaStream;
@@ -127,7 +127,7 @@ public:
     }
 };
 
-void AddZoneAreaTrackerScripts() { 
-  new ZoneAreaTracker(); 
+void AddZoneAreaTrackerScripts() {
+  new ZoneAreaTracker();
   new zone_area_logging_conf();
 }
