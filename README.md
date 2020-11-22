@@ -9,14 +9,14 @@ that will help facilitate future modules and applications via activities such as
   - Machine Learning
   - Statistical Feedback
 
-# Usage
+### Usage
 
   - Once this module is added to AzerothCore and configured you will see three new log files
     added to the bin folder:  kills.log, deaths.log and zonearea.log
   - This module provides no additional functionality other than enhanced logging.  Any further
     utility will need to be created with additional modules, applications or code.
 
-# File Description
+### File Description
 
 | File Name        | Description           |
 | ------------- |----------------| 
