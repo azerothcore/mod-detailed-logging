@@ -1,4 +1,6 @@
-# Azerothcore Detailed Logging Module
+# ![logo](https://raw.githubusercontent.com/azerothcore/azerothcore.github.io/master/images/logo-github.png) AzerothCore
+## Azerothcore Detailed Logging Module
+- Latest build status with azerothcore: [![Build Status](https://github.com/azerothcore/mod-detailed-logging/workflows/core-build/badge.svg?branch=master&event=push)](https://github.com/azerothcore/mod-detailed-logging)
 
 The detailed logging module will provide additional logging for certain events (kills, deaths, movement)
 that will help facilitate future modules and applications via activities such as:
@@ -7,14 +9,14 @@ that will help facilitate future modules and applications via activities such as
   - Machine Learning
   - Statistical Feedback
 
-# Usage
+### Usage
 
   - Once this module is added to AzerothCore and configured you will see three new log files
     added to the bin folder:  kills.log, deaths.log and zonearea.log
   - This module provides no additional functionality other than enhanced logging.  Any further
     utility will need to be created with additional modules, applications or code.
 
-# File Description
+### File Description
 
 | File Name        | Description           |
 | ------------- |----------------| 
