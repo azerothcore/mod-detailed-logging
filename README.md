@@ -1,4 +1,6 @@
-# Azerothcore Detailed Logging Module
+# ![logo](https://raw.githubusercontent.com/azerothcore/azerothcore.github.io/master/images/logo-github.png) AzerothCore
+## Azerothcore Detailed Logging Module
+- Latest build status with azerothcore: [![Build Status](https://github.com/azerothcore/mod-detailed-logging/workflows/core-build/badge.svg?branch=master&event=push)](https://github.com/azerothcore/mod-detailed-logging)
 
 The detailed logging module will provide additional logging for certain events (kills, deaths, movement)
 that will help facilitate future modules and applications via activities such as:
