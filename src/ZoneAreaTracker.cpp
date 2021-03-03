@@ -105,29 +105,6 @@ private:
   }
 };
 
-class zone_area_logging_conf : public WorldScript
-{
-public:
-    zone_area_logging_conf() : WorldScript("zone_area_logging_conf") { }
-
-    void OnBeforeConfigLoad(bool reload) override
-    {
-        if (!reload) {
-            std::string conf_path = _CONF_DIR;
-            std::string cfg_file = conf_path + "/detail_logging.conf";
-#ifdef WIN32
-            cfg_file = "detail_logging.conf";
-#endif
-            std::string cfg_def_file = cfg_file + ".dist";
-
-            sConfigMgr->LoadMore(cfg_def_file.c_str());
-
-            sConfigMgr->LoadMore(cfg_file.c_str());
-        }
-    }
-};
-
 void AddZoneAreaTrackerScripts() {
   new ZoneAreaTracker();
-  new zone_area_logging_conf();
 }
