@@ -7,6 +7,8 @@
 #include <fstream>
 
 using std::stringstream;
+using std::ifstream;
+using std::ofstream;
 
 class DeathStatTracker : public PlayerScript {
 public:

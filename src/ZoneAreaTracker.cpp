@@ -8,6 +8,8 @@
 #include <fstream>
 
 using std::stringstream;
+using std::ifstream;
+using std::ofstream;
 
 class ZoneAreaTracker : public PlayerScript {
 public:
