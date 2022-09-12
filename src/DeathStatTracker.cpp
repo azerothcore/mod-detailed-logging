@@ -37,8 +37,8 @@ public:
       auto tm = *std::localtime(&t);
 
       killStream << std::put_time(&tm, "%d-%m-%Y %H-%M-%S") << ",";
-      killStream << player->GetName() << "," << player->getFaction() << "," << player->getLevel() << "," << player->GetMaxHealth() << "," << player->GetHealth() << ",";
-      killStream << creature->GetName() << "," << creature->getFaction() << "," << creature->GetMaxHealth() << ",";
+      killStream << player->GetName() << "," << player->GetFaction() << "," << player->getLevel() << "," << player->GetMaxHealth() << "," << player->GetHealth() << ",";
+      killStream << creature->GetName() << "," << creature->GetFaction() << "," << creature->GetMaxHealth() << ",";
       killStream << player->GetZoneId() << "," << player->GetAreaId() << "," << player->IsGameMaster();
       killStream << "\n";
 

@@ -39,7 +39,7 @@ public:
       Group* group = player->GetGroup();
 
       zoneStream << std::put_time(&tm, "%d-%m-%Y %H-%M-%S") << ",";
-      zoneStream << player->GetName() << "," << player->getFaction() << "," << player->getLevel() << "," << player->GetMaxHealth() << "," << player->GetHealth() << ",";
+      zoneStream << player->GetName() << "," << player->GetFaction() << "," << player->getLevel() << "," << player->GetMaxHealth() << "," << player->GetHealth() << ",";
       zoneStream << newZone << "," << newArea << (group != NULL) << ",";
 
       if (group != NULL){
@@ -66,7 +66,7 @@ public:
       Group* group = player->GetGroup();
 
       areaStream << std::put_time(&tm, "%d-%m-%Y %H-%M-%S") << ",";
-      areaStream << player->GetName() << "," << player->getFaction() << "," << player->getLevel() << "," << player->GetMaxHealth() << "," << player->GetHealth() << ",";
+      areaStream << player->GetName() << "," << player->GetFaction() << "," << player->getLevel() << "," << player->GetMaxHealth() << "," << player->GetHealth() << ",";
       areaStream << "000000" << "," << newArea << (group != NULL) << ",";
 
       if (group != NULL){

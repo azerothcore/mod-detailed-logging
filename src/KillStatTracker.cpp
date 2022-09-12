@@ -38,8 +38,8 @@ public:
       auto tm = *std::localtime(&t);
 
       killStream << std::put_time(&tm, "%d-%m-%Y %H-%M-%S") << ",";
-      killStream << player->GetName() << "," << player->getFaction() << "," << player->getLevel() << "," << player->GetMaxHealth() << "," << player->GetHealth() << ",";
-      killStream << killed->GetName() << "," << killed->getFaction() << "," << killed->GetMaxHealth() << ",";
+      killStream << player->GetName() << "," << player->GetFaction() << "," << player->getLevel() << "," << player->GetMaxHealth() << "," << player->GetHealth() << ",";
+      killStream << killed->GetName() << "," << killed->GetFaction() << "," << killed->GetMaxHealth() << ",";
       killStream << player->GetZoneId() << "," << player->GetAreaId() << "," << player->IsGameMaster();
       killStream << "\n";
 
@@ -57,8 +57,8 @@ public:
       auto tm = *std::localtime(&t);
 
       killStream << std::put_time(&tm, "%d-%m-%Y %H-%M-%S") << ",";
-      killStream << petOwner->GetName() << "," << petOwner->getFaction() << "," << petOwner->getLevel() << "," << petOwner->GetMaxHealth() << "," << petOwner->GetHealth() << ",";
-      killStream << killed->GetName() << "," << killed->getFaction() << "," << killed->GetMaxHealth() << ",";
+      killStream << petOwner->GetName() << "," << petOwner->GetFaction() << "," << petOwner->getLevel() << "," << petOwner->GetMaxHealth() << "," << petOwner->GetHealth() << ",";
+      killStream << killed->GetName() << "," << killed->GetFaction() << "," << killed->GetMaxHealth() << ",";
       killStream << petOwner->GetZoneId() << "," << petOwner->GetAreaId() << "," << petOwner->IsGameMaster();
       killStream << "\n";
 
