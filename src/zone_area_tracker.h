@@ -29,8 +29,7 @@ public:
         }
     }
 
-    void OnUpdateZone(Player* player, uint32 newZone, uint32 newArea) override;
-    void OnUpdateArea(Player* player, uint32 /*oldArea*/, uint32 newArea) override;
+    void OnUpdateArea(Player* player, uint32 oldArea, uint32 newArea) override;
 
 private:
     int insertCount = 0;

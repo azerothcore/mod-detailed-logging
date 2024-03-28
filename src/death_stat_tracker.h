@@ -14,8 +14,8 @@ class DeathStatTracker : public PlayerScript
 {
 public:
     stringstream fullStream;
-    bool loggingEnabled = sConfigMgr->GetOption<bool>("KillDetailedLoggingDeathStatTracker.enabled", true);
-    int logDumpSize = sConfigMgr->GetOption<int>("KillDetailedLoggingDeathStatTracker.dumpSize", 0);
+    bool loggingEnabled = sConfigMgr->GetOption<bool>("KillDetailedLogging.enabled", true);
+    int logDumpSize = sConfigMgr->GetOption<int>("KillDetailedLogging.dumpSize", 0);
 
     DeathStatTracker() : PlayerScript("DeathStatTracker")
     {

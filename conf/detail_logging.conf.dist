@@ -10,10 +10,10 @@
 #
 
 KillDetailedLogging.enabled = true
-KillDetailedLogging.dumpSize = 0
+KillDetailedLogging.dumpSize = 10
 
 DeathDetailedLogging.enabled = true
-DeathetailedLogging.dumpSize = 0
+DeathetailedLogging.dumpSize = 10
 
 ZoneAreaDetailedLogging.enabled = true
-ZoneAreaDetailedLogging.dumpSize = 0
+ZoneAreaDetailedLogging.dumpSize = 10
