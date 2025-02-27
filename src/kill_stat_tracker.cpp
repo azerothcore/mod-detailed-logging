@@ -1,6 +1,6 @@
 #include "kill_stat_tracker.h"
 
-void KillStatTracker::OnCreatureKill(Player* player, Creature* creature)
+void KillStatTracker::OnPlayerCreatureKill(Player* player, Creature* creature)
 {
     if (loggingEnabled)
     {
@@ -20,7 +20,7 @@ void KillStatTracker::OnCreatureKill(Player* player, Creature* creature)
     }
 }
 
-void KillStatTracker::OnCreatureKilledByPet(Player* player, Creature* creature)
+void KillStatTracker::OnPlayerCreatureKilledByPet(Player* player, Creature* creature)
 {
     if (loggingEnabled)
     {
